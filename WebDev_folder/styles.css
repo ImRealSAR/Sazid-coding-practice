@@ -1,63 +1,104 @@
-:root {
-    font-family: "Times New Roman", sans-serif;
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Theme toggle */
-.theme-toggle {
+body.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar.dark-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a.dark-theme {
+    color: #333;
+}
+
+.settings {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 24px;
 }
 
-.sun-icon {
-    display: none;
+.settings img {
+    width: 20px;
+    height: 20px;
 }
 
-.moon-icon {
-    display: none;
-}
-
-.dark-mode {
-    background-color: black;
-    color: white;
-}
-
-body.light-mode .sun-icon {
-    display: inline;
-    background-color: whitesmoke;
-}
-
-body.dark-mode .moon-icon {
-    display: inline;
-    background-color: black;
-}
-
-/* Settings button */
-#settings {
-    display: flex;
-    padding: 0;
+.account {
+    background: none;
     border: none;
-    width: 50px;  /* Adjust the width as needed */
-    height: 50px;  /* Adjust the height as needed */
-    background-color: transparent;  /* Transparent background if you want just the image */
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px; 
+    padding: 0;
 }
 
-#settings_button_link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+.account img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }
 
-#settings_button_image {
-    width: 100%;  /* Make the image take the full width of the button */
-    height: 100%;  /* Make the image take the full height of the button */
-    object-fit: cover;  /* Ensure the image fits the button size without distortion */
-    border-radius: 5px;
+.account img:hover {
+    transform: scale(1.1);
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header.dark-theme {
+    background: #f4f4f4;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
 }
