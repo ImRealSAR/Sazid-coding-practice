@@ -1,0 +1,63 @@
+:root {
+    font-family: "Times New Roman", sans-serif;
+}
+
+/* Theme toggle */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.sun-icon {
+    display: none;
+}
+
+.moon-icon {
+    display: none;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.light-mode .sun-icon {
+    display: inline;
+    background-color: whitesmoke;
+}
+
+body.dark-mode .moon-icon {
+    display: inline;
+    background-color: black;
+}
+
+/* Settings button */
+#settings {
+    display: flex;
+    padding: 0;
+    border: none;
+    width: 50px;  /* Adjust the width as needed */
+    height: 50px;  /* Adjust the height as needed */
+    background-color: transparent;  /* Transparent background if you want just the image */
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; 
+}
+
+#settings_button_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#settings_button_image {
+    width: 100%;  /* Make the image take the full width of the button */
+    height: 100%;  /* Make the image take the full height of the button */
+    object-fit: cover;  /* Ensure the image fits the button size without distortion */
+    border-radius: 5px;
+}
